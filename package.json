@@ -1,6 +1,6 @@
 {
 	"name": "add-tailwind",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "cli for adding tailwindcss",
 	"main": "index.js",
 	"type": "module",
@@ -14,7 +14,6 @@
 	"dependencies": {
 		"inquirer": "^11.0.2"
 	},
-	"devDependencies": {},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/alihamasdev/add-tailwind.git"
