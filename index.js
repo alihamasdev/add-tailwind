@@ -13,6 +13,10 @@ function readFile(filePath) {
 	return fs.readFileSync(fullPath, { encoding: "utf8" });
 }
 
+const configFileContent = readFile("tailwind.config.js");
+fs.writeFileSync("tailwind.config.js", configFileContent);
+console.log("Successfully created tailwind.config.js file");
+
 inquirer.prompt(pluginQuestion).then((answer) => {
 	if (answer.customPlugin === "Yes") {
 		const pluginFileContent = readFile("tailwind.plugin.js");
