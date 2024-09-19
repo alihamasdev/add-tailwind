@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import inquirer from "inquirer";
 import { fileURLToPath } from "url";
-import { pluginQuestion } from "./questions.js";
+import { pluginQuestion, prettierQuestion } from "./questions.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -17,6 +17,13 @@ inquirer.prompt(pluginQuestion).then((answer) => {
 	if (answer.customPlugin === "Yes") {
 		const pluginFileContent = readFile("tailwind.plugin.js");
 		fs.writeFileSync("tailwind.plugin.js", pluginFileContent);
-		console.log("Plugin file created successfully");
+		console.log("Successfully created tailwind.plugin.js file");
 	}
+	inquirer.prompt(prettierQuestion).then((prettierAnswer) => {
+		if (prettierAnswer.prettier === "Yes") {
+			const prettierFileContent = readFile("prettierrc.json");
+			fs.writeFileSync(".prettierrc", prettierFileContent);
+			console.log("Successfully created .prettierrc file");
+		}
+	});
 });
