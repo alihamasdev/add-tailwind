@@ -1,0 +1,31 @@
+{
+	"name": "add-tailwind",
+	"version": "1.0.0",
+	"description": "cli for adding tailwindcss",
+	"main": "index.js",
+	"type": "module",
+	"bin": {
+		"add-tailwind": "index.js"
+	},
+	"scripts": {},
+	"author": "alihamas",
+	"license": "ISC",
+	"github": "",
+	"dependencies": {
+		"inquirer": "^11.0.2"
+	},
+	"devDependencies": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/alihamasdev/add-tailwind.git"
+	},
+	"keywords": [
+		"tailwind-init",
+		"tailwind-cli",
+		"tailwind-install"
+	],
+	"bugs": {
+		"url": "https://github.com/alihamasdev/add-tailwind/issues"
+	},
+	"homepage": "https://github.com/alihamasdev/add-tailwind#readme"
+}
