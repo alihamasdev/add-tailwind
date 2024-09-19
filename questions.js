@@ -4,7 +4,6 @@ const pluginQuestion = [
 		name: "customPlugin",
 		message: "Do you want to add a custom tailwind plugin?",
 		choices: ["Yes", "No"],
-		default: true,
 	},
 ];
 
@@ -14,7 +13,6 @@ const prettierQuestion = [
 		name: "prettier",
 		message: "Do you want to add a tailwind prettier plugin?",
 		choices: ["Yes", "No"],
-		default: true,
 	},
 ];
 
